@@ -1,0 +1,24 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    content-type: text/html
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://139.224.35.71/bigdata?useUnicode=true&characeterEncoding=UTF-8
+    username: bigdata_web
+    password: bigdata@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+# Mybatis
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location:  classpath:/mybatis/config/mybatis-config.xml
+
+logging:
+  pattern:
+    console: "%d - %msg%n"
+    file: '%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level %logger{15} -%msg%n'

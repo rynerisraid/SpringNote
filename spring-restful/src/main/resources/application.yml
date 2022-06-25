@@ -1,0 +1,13 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    content-type: text/html
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://139.224.35.71/bigdata?useUnicode=true&characeterEncoding=UTF-8
+    username: bigdata_web
+    password: bigdata@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
